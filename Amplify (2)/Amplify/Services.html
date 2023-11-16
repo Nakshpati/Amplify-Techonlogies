@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" 
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images\logo.png" width="100px" style="border-radius: 50px; width: 150px;"></a>  
+            <div class="nav-links" id="navLinks">
+             <i class="fa fa-times"onclick="hideMenu()"></i>
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="about.html">ABOUT</a></li>
+                     <li><a href="Services.html">SERVICES</a></li>
+                     <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+             </div>
+             <i class="fa fa-caret-square-o-down"onclick="showMenu()"></i>   
+          </nav>
+       <h1>Our Services</h1>
+    </section>
+ <!-------------Services--------->
+ <section class="Services">
+    <h1>Services We Offer</h1>
+    <div class="container text-center">
+        <div class="row">
+       
+            <div class="card" style="width: 25rem;">
+                <img src="./images/webdev.jpg" class="card-img-top" alt="..." style="height: 200px; width: 380px;">
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">Our expert team of developers is committed to crafting dynamic, responsive, and visually stunning websites that not only represent your brand but also deliver a seamless user experience.</p>
+                </div>
+            </div>
+      
+       
+            <div class="card" style="width: 25rem;">
+                <img src="images/ui.ux.jpg" class="card-img-top" alt="..." style="height: 200px; width: 380px;">
+                <div class="card-body">
+                  <h5 class="card-title">UI/UX Design</h5>
+                  <p class="card-text">We prioritize understanding your users' needs, and preferences to craft designs that resonate with them. Our UI/UX experts blend creativity with usability, ensuring that your website & app not only looks great but also functions seamlessly.</p>
+              
+                </div>
+            </div>
+        
+        
+            <div class="card" style="width: 25rem;">
+                <img src="./images/support.jpg" class="card-img-top" alt="..." style="height: 200px; width: 380px;">
+                <div class="card-body">
+                  <h5 class="card-title">Support & Maintenance</h5>
+                  <p class="card-text">Our comprehensive support and maintenance services guarantee that your technology remains a valuable asset, enabling you to focus on your core objectives while we take care of the rest.</p>
+                
+                </div>
+            </div>
+        
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+       
+            <div class="card" style="width: 25rem;">
+                <img src="./images/training.jpg" class="card-img-top" alt="..." style="height: 200px; width: 380px;">
+                <div class="card-body">
+                  <h5 class="card-title">Training & Workshops</h5>
+                  <p class="card-text">We create interactive and engaging learning experiences that are not only informative but also hands-on, ensuring that participants gain practical knowledge that can be immediately applied.
+                </p>
+                </div>
+            </div>
+      
+       
+            <div class="card" style="width: 25rem;">
+                <img src="images/mobile.png" class="card-img-top" alt="..." style="height: 200px; width: 380px;">
+                <div class="card-body">
+                  <h5 class="card-title">Mobile App Development</h5>
+                  <p class="card-text">We prioritize understanding your users' needs, and preferences to craft designs that resonate with them. Our Android Development experts blend creativity with usability, ensuring that your website & app not only looks great but also functions seamlessly.</p>
+              
+                </div>
+            </div>
+        
+        
+            <div class="card" style="width: 25rem;">
+                <img src="./images/IT.jpeg" class="card-img-top" alt="..." style="height: 200px; width: 380px;">
+                <div class="card-body">
+                  <h5 class="card-title">IT Solutions</h5>
+                  <p class="card-text">Our comprehensive support and maintenance services guarantee that your technology remains a valuable asset, enabling you to focus on your core objectives while we take care of the rest.</p>
+                
+                </div>
+            </div>
+        
+        </div>
+      </div>
+</section>
+
+ 
+ <!-------------Footer----------->
+ <section class="footer">
+    <img src="images\logo.png" width="100px" style="border-radius: 50px; width: 100px;">
+    <h4>Join Us</h4>
+    <div class="icons">
+        
+        <a href="https://www.instagram.com/amplify_techonlogies/"  class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/amplify-technologie/"  class="fa fa-linkedin"></a>
+    </div>
+    <p>&copy; 2023 Amplify Technologies</p>
+
+
+ </section>       
+
+
+
+
+
+<!------javascript for toggle menu------->    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
+
+</body>
+</html>
